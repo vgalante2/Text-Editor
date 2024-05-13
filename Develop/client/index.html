@@ -17,24 +17,46 @@
       <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
       </link>
+      <link rel="manifest" href="./manifest.json">
+      <link rel="stylesheet" href="/Develop/client/src/css/style.css">
+
   </head>
   <body>
     <nav id="navbar">
       <div class="nav-btn">
         <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
       </div>
-     <h1> Just Another Text Editor</h1>
+     <h1>CONTACT CARDZ</h1>
      
       <div class="navbar-brand" 
-            ><img src="./assets/icons/icon_96x96.png"
+            ><img src=""
           /></div>
     </nav>
 
-    <main id="main">
+    <!-- <main id="main">
       <div class="loading-container">
         <div class="loading-spinner"></div>
       </div>
-    </main>
+    </main> -->
     
+    <main>
+      <form id="form" class="form">
+        <label class="label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="input name-input">
+        <label class="label" for="name">Home Phone</label>
+        <input type="text" name="homePhone" id="homePhone" class="nput home-input">
+        <label class="label" for="cellPhone">Cell Phone</label>
+        <input type="text" name="cellPhone" id="cellPhone" class="nput cell-input">
+        <label class="label" for="name">Email</label>
+        <input type="text" name="email" id="email" class="nput email-input">
+        <button class="btn btn-black" id="btn" >Submit</button>
+      </form>    
+    </main>
+
+
+
   </body>
+
+  <script src="/Develop/client/src/js/index.js"></script>
+
 </html>
