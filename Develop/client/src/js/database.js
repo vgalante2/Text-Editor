@@ -1,5 +1,12 @@
 import { openDB } from 'idb';
 
+const indexedDB =
+window.indexedDB ||
+window.mozIndexDB ||
+window.webkitIndexedDB ||
+window.shimIndexedDB;
+
+
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
