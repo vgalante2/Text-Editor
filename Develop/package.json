@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start:dev": "",
-    "start": "",
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd ./server && npm run dev\" \"cd ./client && npm run dev\"",
     "server": "",
-    "build": "",
+    "build": "webpack",
     "install": "",
     "client": ""
   },
